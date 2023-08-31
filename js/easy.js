@@ -64,49 +64,67 @@ let submit5=document.querySelector("#submit5");
 let score_text=document.querySelector("#score");
 let score=0;
 let form=document.forms['form'];
-let res2=form.querySelector('input[id="quest2"]').value;
-let res3=form.querySelector('input[id="quest3"]').value;
-let res4=form.querySelector('input[id="quest4"]').value;
-let res5=form.querySelector('input[id="quest5"]').value;
-
+let res1=document.querySelector("#quest1");
+let res2=document.querySelector('input[id="quest2"]');
+let res3=document.querySelector('input[id="quest3"]');
+let res4=document.querySelector('input[id="quest4"]');
+let res5=document.querySelector('input[id="quest5"]');
 score_text.innerHTML="Score: " + localStorage.getItem("score");
 
 submit1.addEventListener("click", function(e){
     e.preventDefault();
-    alert(res1);
-    if(res1.toLowerCase()=="argentina"){
+    if(res1.value.toLowerCase()=="argentina"){
         score=score+1;
-        
-        score_text.innerHTML="Score: " + localStorage.getItem("score");
+        alert("correct");
+    }else{
+        alert("false");
     }
+    localStorage.setItem("score",score);
+    score_text.innerHTML="Score: " + localStorage.getItem("score");
 })
 submit2.addEventListener("click", function(e){
     e.preventDefault();
-    if(res2.toLowerCase()=="protugal"){
+    if(res2.value.toLowerCase()=="portugal"){
         score=score+1;
-        score_text.innerHTML="Score: " + localStorage.getItem("score");
+        alert("correct");
+    }else{
+        alert("false");
     }
+    localStorage.setItem("score",score);
+    score_text.innerHTML="Score: " + localStorage.getItem("score")
 })
 submit3.addEventListener("click", function(e){
     e.preventDefault();
-    if(res3.toLowerCase()=="argentina"){
-        score=score+1;
-        score_text.innerHTML="Score: " + localStorage.getItem("score");
+    if(res3.value.toLowerCase()=="argentina"){
+        score=score+1;  
+        alert("correct");     
+    }else{
+        alert("false");
     }
+    localStorage.setItem("score",score);
+    score_text.innerHTML="Score: " + localStorage.getItem("score")
 })
 submit4.addEventListener("click", function(e){
     e.preventDefault();
-    if(res4.toLowerCase()=="senegal"){
-        score=score+1;
-        score_text.innerHTML="Score: " + localStorage.getItem("score");
+    if(res4.value.toLowerCase()=="senegal"){
+        score=score+1;  
+        alert("correct"); 
+    }else{
+        alert("false");
     }
+    localStorage.setItem("score",score);
+    score_text.innerHTML="Score: " + localStorage.getItem("score")
 })
 submit5.addEventListener("click", function(e){
     e.preventDefault();
-    if(res5.toLowerCase()=="benzema"){
-        score=score+1;
-        score_text.innerHTML="Score: " + localStorage.getItem("score");
+    if(res5.value.toLowerCase()=="benzema"){
+        score=score+1; 
+        alert("correct");     
+    }else{
+        alert("false");
     }
+    localStorage.setItem("score",score);
+    score_text.innerHTML="Score: " + localStorage.getItem("score")
     location.assign("endeasy.html");
 })
 localStorage.setItem("score",score);
