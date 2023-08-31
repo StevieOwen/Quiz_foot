@@ -1,0 +1,83 @@
+:root{
+    --primary: #7f9227;
+    --secondary:#000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid var(--secondary);
+}
+.container header img{
+    display: inline-block;
+    margin-bottom: 20%;
+    border-bottom: 5px solid var(--secondary);
+}
+
+.container main{
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container main form{
+    position: relative;
+} 
+.container main form label{
+    display: inline-block;
+    margin-bottom: 9%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container main form input[type="text"]{
+    position: inherit;
+    display: inline-block;
+    margin-bottom: 9%;
+    font-size: 1rem;
+    padding: 3%;
+    border-radius:10px;
+    box-shadow: 1px 1px 1px 4px var(--primary) ;
+}
+.container main form img{
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: -3%;
+}
+.container main form input[type="submit"]{
+    display: inline-block;
+    padding:1% 10%;
+    background-color: var(--primary);
+    box-shadow: 1px 1px 1px 3px #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+footer{
+    position: relative;
+    display: flex;
+    background-color: #7f9227;
+    border-top: 5px solid var(--secondary);
+}
+footer p{
+    font-size: 1.1rem;
+    margin-left: 5%;
+}
+
+@media screen and(max-width:655px){
+    body{
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    footer p{
+        font-size: 1.3rem;
+        margin-left: 5%;
+    }
+}

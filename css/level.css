@@ -1,0 +1,74 @@
+:root{
+    --primary: #7f9227;
+    --secondary:#000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid var(--secondary);
+}
+.container header{
+    margin-bottom:5%;
+    
+}
+.container header img{
+    display: inline-block;
+    margin-bottom: 5%;
+    border-bottom: 5px solid var(--secondary);
+}
+.container header section #great_cont{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--secondary);
+}
+.container header section #great_cont div{
+    font-size: 1.4rem;
+}
+main{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main h4{
+    font-size: 1.3rem;
+}
+main button{
+    display: block;
+    margin-bottom: 5%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px 3px var(--secondary);
+    color: #fff;
+}
+main #easy{
+margin-left: 35%;
+}
+main #intermediate{
+    margin-left: 24%;
+}
+main #advance{
+    margin-left: 30%;
+}
+main #previous{
+    margin-top:15%;
+    margin-left: 30%;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    background-color: #7f9227;
+    border-top: 5px solid var(--secondary);
+}
+footer p{
+    font-size: 1.1rem;
+    margin-left: 5%;
+}

@@ -1,0 +1,55 @@
+:root{
+    --primary: #7f9227;
+    --secondary:#000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid var(--secondary);
+}
+.container header img{
+    display: inline-block;
+    margin-bottom: 10%;
+    border-bottom: 5px solid var(--secondary);
+}
+.container main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container main p{
+    display: block;
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid var(--secondary);
+    padding: 50%;
+    transform: translateX(-20%);
+}
+.container main h4{
+    font-size: 1.2rem;
+}
+.container main button{
+    display: block;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px var(--secondary);
+    margin-bottom: 15%;
+}
+footer{
+    position: relative;
+    display: flex;
+    background-color: #7f9227;
+    border-top: 5px solid var(--secondary);
+}
+footer p{
+    font-size: 1.1rem;
+    margin-left: 5%;
+}
