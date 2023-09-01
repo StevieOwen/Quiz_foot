@@ -16,5 +16,5 @@ advance_button.addEventListener("click",function(e){
     location.assign("");
 })
 previous_button.addEventListener("click",function(e){
-    location.assign("../login.html");
+    location.assign("../index.html");
 })

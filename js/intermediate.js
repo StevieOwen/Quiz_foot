@@ -49,3 +49,23 @@ prev4.addEventListener("click",function(e){
     e.preventDefault();
     switch_page.style.marginLeft="-80%";
 })
+
+
+let res1=document.querySelector('input[name="quest1"]:checked');
+let res2=document.querySelector('input[name="quest2"]:checked');
+let res3=document.querySelector('input[name="quest3"]:checked');
+let res4=document.querySelector('input[name="quest4"]:checked');
+let res5=document.querySelector('input[name="quest5"]:checked');
+
+let submit1=document.querySelector("#submit1");
+let submit2=document.querySelector("#submit2");
+let submit3=document.querySelector("#submit3");
+let submit4=document.querySelector("#submit4");
+let submit5=document.querySelector("#submit5");
+
+submit1.addEventListener("click",function(e){
+    alert(res1.value);
+})
+submit2.addEventListener("click",function(e){
+    alert(res2.value);
+})
