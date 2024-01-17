@@ -1,0 +1,225 @@
+:root{
+    --primary: #7f9227;
+    --secondary:#000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid var(--secondary);
+}
+main .progress_bar{
+    display: flex;
+    width: 40%;
+}
+main .progress_bar .step{
+    width: 100%;
+    margin-left: 40%;
+}
+main .progress_bar .step .bullet{
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    width: 180%;
+    border: 2.1px solid var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.2s;
+}
+main .progress_bar .step .bullet .active{
+
+}
+.progress_bar .step .bullet:before,.progress_bar .step .bullet:after{
+    content:"";
+    height: 3px;
+    width: 44px;
+    background: var(--secondary);
+    position: absolute;
+    left: 25px;
+    top: 9px;
+}
+.progress_bar .step .bullet.active:after{
+    background-color: var(--primary);
+}
+.progress_bar .step:last-child .bullet:before, .progress_bar .step:last-child .bullet:after{
+    display: none;
+}
+
+.progress_bar .step .bullet span{  
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+main .progress_bar .step .check{
+    display: inline-block;
+    
+}
+main .progress_bar .step .check .true{
+    display: inline-block;
+    position: absolute;
+    top:55.4%;
+    transform: translateX(-8%);
+    display: none;
+} 
+main .progress_bar .step .check #true1.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #true2.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #true3.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #true4.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #true5.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #false1.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #false2.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #false3.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #false4.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+main .progress_bar .step .check #false5.active1{
+    display: inline-block;
+    width: 2%;
+    position: absolute;
+    top:55%;
+    transform: translateX(-8%);
+}
+
+main .progress_bar .step .check .false{
+    display: inline-block;
+    position: absolute;
+    top:55.4%;
+    display: none;
+} 
+
+.container header img{
+    display: inline-block;
+    margin-bottom: 5%;
+    border-bottom: 5px solid var(--secondary);
+}
+
+.container header section #great_cont{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--secondary);
+}
+.container header section #great_cont div{
+    font-size: 1.4rem;
+}
+.container header section h4{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main{
+    width: 400px;
+}
+main .form-container{
+    width: 100%;
+    overflow: hidden;
+}
+main .form-container form{
+    width: 450%;
+    display: flex;
+    
+}
+main .form-container form .page{
+    width: 40%;
+    text-align: center;
+}
+main .form-container form .page label{
+    display: inline-block;
+    margin-bottom: 3%;
+} 
+
+form .page .button button{
+    display: inline-block;
+    margin-bottom: 5%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px var(--secondary);
+}
+main .form-container form input[type="radio"]{
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+form .page .button .submit{
+    margin-left: 5%;
+}
+
+form .page .button .switch .next{
+    margin-left: 33%;
+}
+form .page .button .switch .prev{
+    margin-left: 7%;
+}
+form .page .button .switch #next4{
+    margin-right: 4%;
+}
+
+
+footer{
+    position: relative;
+    display: flex;
+    background-color: #7f9227;
+    border-top: 5px solid var(--secondary);
+}
+footer p{
+    font-size: 1.1rem;
+    margin-left: 5%;
+}
